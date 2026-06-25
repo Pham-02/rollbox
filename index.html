@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>RollBox</title>
+    <link rel="icon" href="fav.png" type="image/png">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <div class="container">
+
+        <!-- Rollbox Card -->
+        <div class="rollbox">
+
+            <h1>ROLLBOX</h1>
+
+            <div class="dice-container">
+
+    <div id="dice1" class="dice"></div>
+
+    <div id="dice2" class="dice"></div>
+
+    <div id="dice3" class="dice"></div>
+
+</div>
+
+            <button class="roll-btn">
+                ROLL AGAIN!
+            </button>
+
+        </div>
+
+        <div class="promo-box">
+
+    <h3>PROMO CODE</h3>
+
+    <input
+        type="text"
+        id="promoInput"
+        placeholder="Enter code"
+    >
+
+    <button onclick="checkPromo()">
+        Apply
+    </button>
+
+</div> 
+
+    <div id="rigPanel" class="rig-panel">
+
+    <div class="rig-header">
+
+    <span>RIG PANEL</span>
+
+    <div class="rig-controls">
+
+        <button id="minimizeRig">-</button>
+
+        <button id="closeRig">×</button>
+
+    </div>
+    <label>Dice 1</label>
+    <select id="dice1Rig">
+        <option value="">Random</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="violet">Violet</option>
+    </select>
+
+    <label>Dice 2</label>
+    <select id="dice2Rig">
+        <option value="">Random</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="violet">Violet</option>
+    </select>
+
+    <label>Dice 3</label>
+    <select id="dice3Rig">
+        <option value="">Random</option>
+        <option value="white">White</option>
+        <option value="blue">Blue</option>
+        <option value="red">Red</option>
+        <option value="green">Green</option>
+        <option value="yellow">Yellow</option>
+        <option value="violet">Violet</option>
+    </select>
+
+</div>
+</div>
+<div id="restoreRig" class="restore-rig">
+    Open Rig
+</div>
+    </div>
+<script src="script.js"></script>
+</body>
+</html>
